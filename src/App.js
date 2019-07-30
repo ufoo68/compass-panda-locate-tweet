@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import './Geolocated';
 import Geolocated from './Geolocated';
+import Form from './Form';
 
-function App() {
-  return (
-    <div className="App">
-      <Geolocated/>
-    </div>
-  );
+export default class App extends Component {
+  handleSubmit = (values) => {
+    console.log(values);
+  };
+  render() {
+    return (
+      <div className="App">
+        <Geolocated/>
+        <Form onValidSubmit={this.handleSubmit} />
+      </div>
+    );
+  }
 }
-
-export default App;
