@@ -7,7 +7,7 @@ const Input = ({
   ...props,
 }) => (
   <div>
-    <input
+    <textarea rows="5" cols="60"
       {...props}
       {...input}
     />

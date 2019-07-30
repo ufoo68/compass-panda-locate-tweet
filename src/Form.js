@@ -8,24 +8,13 @@ const Form = ({
 }) => (
   <form onSubmit={handlers.onSubmit}>
     <div>
-      <label htmlFor="email">Email-Address</label>
-      <Input
-        id="email"
-        type="email"
-        name="email"
-        label="Email-Address"
-        placeholder="Enter your Email-Address"
-      />
-    </div>
-
-    <div>
-      <label htmlFor="password">Password</label>
+      <label htmlFor="message">つぶやきを残す</label>
       <Input
         id="password"
         type="password"
         name="password"
         label="Password"
-        placeholder="Enter your Password"
+        placeholder="つぶやきを入力"
       />
     </div>
 
@@ -41,10 +30,6 @@ const Form = ({
 
 export default dripForm({
   validations: {
-    email: {
-      required: true,
-      email: true,
-    },
     password: {
       required: true,
     },
