@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea317c848ee0419cb9f01b2291c53de3",
+    "revision": "02408cb66e0f335cd4448afceedb5ac1",
     "url": "/compass-panda-locate-tweet/index.html"
   },
   {
-    "revision": "54a1e0d352bab2516bc4",
+    "revision": "6d052498eed7a0d1c7c6",
     "url": "/compass-panda-locate-tweet/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compass-panda-locate-tweet/static/js/2.3840f76e.chunk.js"
   },
   {
-    "revision": "54a1e0d352bab2516bc4",
-    "url": "/compass-panda-locate-tweet/static/js/main.a6963535.chunk.js"
+    "revision": "6d052498eed7a0d1c7c6",
+    "url": "/compass-panda-locate-tweet/static/js/main.f8cd6164.chunk.js"
   },
   {
     "revision": "43321f2698932a6bddee",
