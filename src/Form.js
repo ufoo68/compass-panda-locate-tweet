@@ -10,10 +10,7 @@ const Form = ({
     <div>
       <label htmlFor="message">つぶやきを残す</label>
       <Input
-        id="password"
-        type="password"
-        name="password"
-        label="Password"
+        name="tweet"
         placeholder="つぶやきを入力"
       />
     </div>
@@ -30,7 +27,7 @@ const Form = ({
 
 export default dripForm({
   validations: {
-    password: {
+    tweet: {
       required: true,
     },
   },
