@@ -24,12 +24,14 @@ export default class App extends Component {
         window.close();
       }
       ).catch((error) =>{
-        alert('error');
+        alert('post error');
         console.error(error);
+        window.close();
       });
     }, (err) => {
-      alert('error');
+      alert('geolocated error');
       console.log(err);
+      window.close();
     }, {
         enableHighAccuracy: false, 
         timeout: 1000, 
