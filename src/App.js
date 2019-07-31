@@ -17,13 +17,18 @@ export default class App extends Component {
         tweet
       };
       fetch('https://compasspandaapi.firebaseapp.com/locate',
-        {method:'POST', body:locateTweet}
-      ).then((response) =>
-        console.log(response)
+        {method:'POST', body:JSON.stringify(locateTweet)}
+      ).then((response) => {
+        alert('success!');
+        console.log(response.body);
+        window.close();
+      }
       ).catch((error) =>{
+        alert('error');
         console.error(error);
       });
     }, (err) => {
+      alert('error');
       console.log(err);
     }, {
         enableHighAccuracy: false, 
