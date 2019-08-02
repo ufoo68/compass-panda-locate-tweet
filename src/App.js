@@ -19,18 +19,15 @@ export default class App extends Component {
       fetch('https://compasspandaapi.firebaseapp.com/locate',
         {method:'POST', body:JSON.stringify(locateTweet)}
       ).then((response) => {
-        alert('success!');
-        console.log(response.body);
+        alert("つぶやいたよ");
         window.close();
       }
-      ).catch((error) =>{
-        alert('post error');
-        console.error(error);
+      ).catch(() =>{
+        alert("失敗したみたい。。。");
         window.close();
       });
     }, (err) => {
-      alert('geolocated error');
-      console.log(err);
+      alert(err.message);
       window.close();
     }, {
         enableHighAccuracy: false, 
